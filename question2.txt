@@ -1,0 +1,29 @@
+Absolute and relative positioning are two different methods used in CSS for positioning HTML elements on a web page. They both affect the placement of an element relative to its normal position in the document flow.
+
+1. Relative Positioning:
+   - When an element is set to have a relative position, it is positioned relative to its normal position in the document flow.
+   - The surrounding elements are not affected by the element with relative positioning. It retains its space in the document flow, and other elements are positioned as if the element still took up its original space.
+   - You can then use properties like `top`, `right`, `bottom`, and `left` to move the element from its normal position.
+
+   Example:
+   css
+   .relative-box {
+     position: relative;
+     top: 10px;
+     left: 20px;
+   }
+   
+
+2. Absolute Positioning:
+   - When an element is set to have an absolute position, it is positioned relative to its closest positioned ancestor (an ancestor with a position value other than `static`, which is the default).
+   - If there is no positioned ancestor, it is positioned relative to the initial containing block (usually the `<html>` element).
+   - An element with absolute positioning is removed from the normal document flow, and other elements are positioned as if it doesn't exist. This means it won't affect the layout of other elements.
+
+   Example:
+   css
+   .absolute-box {
+     position: absolute;
+     top: 50px;
+     left: 100px;
+   }
+   
